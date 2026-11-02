@@ -1,0 +1,7 @@
+variant,pricing,mae,corr_hourly,model_mean,gen_error_pct_lignite,gen_error_pct_hard_coal,gen_error_pct_gas
+no_dynamics,relaxed,20.119,0.727,77.314,12.126,-5.091,-10.087
+no_dynamics,restricted,20.237,0.719,76.885,12.126,-5.091,-10.087
+startup_x2,relaxed,19.320,0.739,76.335,10.471,-4.217,-8.082
+startup_x2,restricted,19.033,0.739,73.658,10.471,-4.217,-8.082
+base,relaxed,18.929,0.742,76.706,11.006,-4.159,-9.044
+base,restricted,19.236,0.733,75.039,11.006,-4.159,-9.044

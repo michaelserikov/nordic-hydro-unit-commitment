@@ -1,0 +1,10 @@
+year,actual_mean,model_mean,mae,rmse,corr_hourly,corr_daily,share_hours_at_or_below_zero_actual,share_hours_at_or_below_zero_model,mae_negative_hours,model,sample
+2023,95.175,92.897,20.943,32.324,0.744,0.850,0.037,0.126,36.153,merit order,calibration
+2024,78.512,77.405,20.309,37.307,0.713,0.822,0.059,0.117,29.826,merit order,out of sample
+2025,89.322,83.680,22.588,36.235,0.727,0.831,0.075,0.131,36.099,merit order,out of sample
+2023,95.175,90.940,20.323,32.291,0.760,0.863,0.037,0.148,31.177,UC restricted,calibration
+2024,78.512,75.039,19.236,36.081,0.733,0.843,0.059,0.150,24.959,UC restricted,out of sample
+2025,89.322,81.379,21.290,35.016,0.756,0.853,0.075,0.164,25.230,UC restricted,out of sample
+2023,95.175,92.713,20.251,31.998,0.765,0.858,0.037,0.138,32.589,UC relaxed,calibration
+2024,78.512,76.706,18.929,35.412,0.742,0.843,0.059,0.139,25.221,UC relaxed,out of sample
+2025,89.322,83.168,20.970,34.124,0.765,0.849,0.075,0.150,28.106,UC relaxed,out of sample

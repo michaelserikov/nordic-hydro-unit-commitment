@@ -1,0 +1,399 @@
+{
+  "calibration": {
+    "year": 2023,
+    "dump_cost_eur_mwh": 0.0,
+    "lignite_fuel": 4.0,
+    "must_run_quantile": 0.15
+  },
+  "units": {
+    "lignite": {
+      "size_mw": 500.0,
+      "pmin": 0.4,
+      "min_up": 8,
+      "min_down": 6,
+      "startup_eur_per_mw": 70.0
+    },
+    "hard_coal": {
+      "size_mw": 400.0,
+      "pmin": 0.35,
+      "min_up": 6,
+      "min_down": 4,
+      "startup_eur_per_mw": 55.0
+    },
+    "ccgt": {
+      "size_mw": 400.0,
+      "pmin": 0.4,
+      "min_up": 4,
+      "min_down": 2,
+      "startup_eur_per_mw": 45.0
+    },
+    "ocgt": {
+      "size_mw": 100.0,
+      "pmin": 0.2,
+      "min_up": 1,
+      "min_down": 1,
+      "startup_eur_per_mw": 25.0
+    }
+  },
+  "clusters_per_fuel": 4,
+  "lookahead_h": 12,
+  "metrics": [
+    {
+      "year": 2023,
+      "actual_mean": 95.175,
+      "model_mean": 92.897,
+      "mae": 20.943,
+      "rmse": 32.324,
+      "corr_hourly": 0.744,
+      "corr_daily": 0.85,
+      "share_hours_at_or_below_zero_actual": 0.037,
+      "share_hours_at_or_below_zero_model": 0.126,
+      "mae_negative_hours": 36.153,
+      "model": "merit order",
+      "sample": "calibration"
+    },
+    {
+      "year": 2024,
+      "actual_mean": 78.512,
+      "model_mean": 77.405,
+      "mae": 20.309,
+      "rmse": 37.307,
+      "corr_hourly": 0.713,
+      "corr_daily": 0.822,
+      "share_hours_at_or_below_zero_actual": 0.059,
+      "share_hours_at_or_below_zero_model": 0.117,
+      "mae_negative_hours": 29.826,
+      "model": "merit order",
+      "sample": "out of sample"
+    },
+    {
+      "year": 2025,
+      "actual_mean": 89.322,
+      "model_mean": 83.68,
+      "mae": 22.588,
+      "rmse": 36.235,
+      "corr_hourly": 0.727,
+      "corr_daily": 0.831,
+      "share_hours_at_or_below_zero_actual": 0.075,
+      "share_hours_at_or_below_zero_model": 0.131,
+      "mae_negative_hours": 36.099,
+      "model": "merit order",
+      "sample": "out of sample"
+    },
+    {
+      "year": 2023,
+      "actual_mean": 95.175,
+      "model_mean": 90.94,
+      "mae": 20.323,
+      "rmse": 32.291,
+      "corr_hourly": 0.76,
+      "corr_daily": 0.863,
+      "share_hours_at_or_below_zero_actual": 0.037,
+      "share_hours_at_or_below_zero_model": 0.148,
+      "mae_negative_hours": 31.177,
+      "model": "UC restricted",
+      "sample": "calibration"
+    },
+    {
+      "year": 2024,
+      "actual_mean": 78.512,
+      "model_mean": 75.039,
+      "mae": 19.236,
+      "rmse": 36.081,
+      "corr_hourly": 0.733,
+      "corr_daily": 0.843,
+      "share_hours_at_or_below_zero_actual": 0.059,
+      "share_hours_at_or_below_zero_model": 0.15,
+      "mae_negative_hours": 24.959,
+      "model": "UC restricted",
+      "sample": "out of sample"
+    },
+    {
+      "year": 2025,
+      "actual_mean": 89.322,
+      "model_mean": 81.379,
+      "mae": 21.29,
+      "rmse": 35.016,
+      "corr_hourly": 0.756,
+      "corr_daily": 0.853,
+      "share_hours_at_or_below_zero_actual": 0.075,
+      "share_hours_at_or_below_zero_model": 0.164,
+      "mae_negative_hours": 25.23,
+      "model": "UC restricted",
+      "sample": "out of sample"
+    },
+    {
+      "year": 2023,
+      "actual_mean": 95.175,
+      "model_mean": 92.713,
+      "mae": 20.251,
+      "rmse": 31.998,
+      "corr_hourly": 0.765,
+      "corr_daily": 0.858,
+      "share_hours_at_or_below_zero_actual": 0.037,
+      "share_hours_at_or_below_zero_model": 0.138,
+      "mae_negative_hours": 32.589,
+      "model": "UC relaxed",
+      "sample": "calibration"
+    },
+    {
+      "year": 2024,
+      "actual_mean": 78.512,
+      "model_mean": 76.706,
+      "mae": 18.929,
+      "rmse": 35.412,
+      "corr_hourly": 0.742,
+      "corr_daily": 0.843,
+      "share_hours_at_or_below_zero_actual": 0.059,
+      "share_hours_at_or_below_zero_model": 0.139,
+      "mae_negative_hours": 25.221,
+      "model": "UC relaxed",
+      "sample": "out of sample"
+    },
+    {
+      "year": 2025,
+      "actual_mean": 89.322,
+      "model_mean": 83.168,
+      "mae": 20.97,
+      "rmse": 34.124,
+      "corr_hourly": 0.765,
+      "corr_daily": 0.849,
+      "share_hours_at_or_below_zero_actual": 0.075,
+      "share_hours_at_or_below_zero_model": 0.15,
+      "mae_negative_hours": 28.106,
+      "model": "UC relaxed",
+      "sample": "out of sample"
+    }
+  ],
+  "generation_by_fuel": [
+    {
+      "year": 2023,
+      "fuel": "lignite",
+      "actual_twh": 77.84,
+      "model_twh": 87.47,
+      "error_pct": 12.36,
+      "model": "merit order"
+    },
+    {
+      "year": 2023,
+      "fuel": "hard_coal",
+      "actual_twh": 39.75,
+      "model_twh": 39.11,
+      "error_pct": -1.6,
+      "model": "merit order"
+    },
+    {
+      "year": 2023,
+      "fuel": "gas",
+      "actual_twh": 51.17,
+      "model_twh": 43.59,
+      "error_pct": -14.82,
+      "model": "merit order"
+    },
+    {
+      "year": 2024,
+      "fuel": "lignite",
+      "actual_twh": 70.99,
+      "model_twh": 81.61,
+      "error_pct": 14.96,
+      "model": "merit order"
+    },
+    {
+      "year": 2024,
+      "fuel": "hard_coal",
+      "actual_twh": 27.34,
+      "model_twh": 25.45,
+      "error_pct": -6.9,
+      "model": "merit order"
+    },
+    {
+      "year": 2024,
+      "fuel": "gas",
+      "actual_twh": 56.98,
+      "model_twh": 49.72,
+      "error_pct": -12.75,
+      "model": "merit order"
+    },
+    {
+      "year": 2025,
+      "fuel": "lignite",
+      "actual_twh": 67.17,
+      "model_twh": 75.08,
+      "error_pct": 11.78,
+      "model": "merit order"
+    },
+    {
+      "year": 2025,
+      "fuel": "hard_coal",
+      "actual_twh": 28.16,
+      "model_twh": 29.44,
+      "error_pct": 4.55,
+      "model": "merit order"
+    },
+    {
+      "year": 2025,
+      "fuel": "gas",
+      "actual_twh": 60.61,
+      "model_twh": 53.5,
+      "error_pct": -11.74,
+      "model": "merit order"
+    },
+    {
+      "year": 2023,
+      "fuel": "lignite",
+      "actual_twh": 77.84,
+      "model_twh": 84.68,
+      "error_pct": 8.79,
+      "model": "UC"
+    },
+    {
+      "year": 2023,
+      "fuel": "hard_coal",
+      "actual_twh": 39.75,
+      "model_twh": 40.0,
+      "error_pct": 0.63,
+      "model": "UC"
+    },
+    {
+      "year": 2023,
+      "fuel": "gas",
+      "actual_twh": 51.17,
+      "model_twh": 45.52,
+      "error_pct": -11.05,
+      "model": "UC"
+    },
+    {
+      "year": 2024,
+      "fuel": "lignite",
+      "actual_twh": 70.99,
+      "model_twh": 78.8,
+      "error_pct": 11.01,
+      "model": "UC"
+    },
+    {
+      "year": 2024,
+      "fuel": "hard_coal",
+      "actual_twh": 27.34,
+      "model_twh": 26.2,
+      "error_pct": -4.16,
+      "model": "UC"
+    },
+    {
+      "year": 2024,
+      "fuel": "gas",
+      "actual_twh": 56.98,
+      "model_twh": 51.83,
+      "error_pct": -9.04,
+      "model": "UC"
+    },
+    {
+      "year": 2025,
+      "fuel": "lignite",
+      "actual_twh": 67.17,
+      "model_twh": 72.99,
+      "error_pct": 8.67,
+      "model": "UC"
+    },
+    {
+      "year": 2025,
+      "fuel": "hard_coal",
+      "actual_twh": 28.16,
+      "model_twh": 29.44,
+      "error_pct": 4.55,
+      "model": "UC"
+    },
+    {
+      "year": 2025,
+      "fuel": "gas",
+      "actual_twh": 60.61,
+      "model_twh": 55.64,
+      "error_pct": -8.21,
+      "model": "UC"
+    }
+  ],
+  "unit_starts": {
+    "2023": {
+      "lignite": 1166.0,
+      "hard_coal": 1313.0,
+      "gas": 4003.0
+    },
+    "2024": {
+      "lignite": 1394.0,
+      "hard_coal": 1019.0,
+      "gas": 4710.0
+    },
+    "2025": {
+      "lignite": 1489.0,
+      "hard_coal": 1415.0,
+      "gas": 5185.0
+    }
+  },
+  "sensitivity_2024": [
+    {
+      "variant": "no_dynamics",
+      "pricing": "relaxed",
+      "mae": 20.119,
+      "corr_hourly": 0.727,
+      "model_mean": 77.314,
+      "gen_error_pct_lignite": 12.126,
+      "gen_error_pct_hard_coal": -5.091,
+      "gen_error_pct_gas": -10.087
+    },
+    {
+      "variant": "no_dynamics",
+      "pricing": "restricted",
+      "mae": 20.237,
+      "corr_hourly": 0.719,
+      "model_mean": 76.885,
+      "gen_error_pct_lignite": 12.126,
+      "gen_error_pct_hard_coal": -5.091,
+      "gen_error_pct_gas": -10.087
+    },
+    {
+      "variant": "startup_x2",
+      "pricing": "relaxed",
+      "mae": 19.32,
+      "corr_hourly": 0.739,
+      "model_mean": 76.335,
+      "gen_error_pct_lignite": 10.471,
+      "gen_error_pct_hard_coal": -4.217,
+      "gen_error_pct_gas": -8.082
+    },
+    {
+      "variant": "startup_x2",
+      "pricing": "restricted",
+      "mae": 19.033,
+      "corr_hourly": 0.739,
+      "model_mean": 73.658,
+      "gen_error_pct_lignite": 10.471,
+      "gen_error_pct_hard_coal": -4.217,
+      "gen_error_pct_gas": -8.082
+    },
+    {
+      "variant": "base",
+      "pricing": "relaxed",
+      "mae": 18.929,
+      "corr_hourly": 0.742,
+      "model_mean": 76.706,
+      "gen_error_pct_lignite": 11.006,
+      "gen_error_pct_hard_coal": -4.159,
+      "gen_error_pct_gas": -9.044
+    },
+    {
+      "variant": "base",
+      "pricing": "restricted",
+      "mae": 19.236,
+      "corr_hourly": 0.733,
+      "model_mean": 75.039,
+      "gen_error_pct_lignite": 11.006,
+      "gen_error_pct_hard_coal": -4.159,
+      "gen_error_pct_gas": -9.044
+    }
+  ],
+  "shed_hours": 5,
+  "days_with_commitment_restart": {
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+  }
+}

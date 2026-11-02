@@ -1,0 +1,19 @@
+year,fuel,actual_twh,model_twh,error_pct,model
+2023,lignite,77.844,87.468,12.363,merit order
+2023,hard_coal,39.750,39.113,-1.602,merit order
+2023,gas,51.173,43.587,-14.823,merit order
+2024,lignite,70.986,81.606,14.960,merit order
+2024,hard_coal,27.336,25.449,-6.903,merit order
+2024,gas,56.982,49.716,-12.751,merit order
+2025,lignite,67.166,75.078,11.780,merit order
+2025,hard_coal,28.157,29.440,4.553,merit order
+2025,gas,60.608,53.496,-11.735,merit order
+2023,lignite,77.844,84.684,8.786,UC
+2023,hard_coal,39.750,40.002,0.634,UC
+2023,gas,51.173,45.516,-11.053,UC
+2024,lignite,70.986,78.799,11.006,UC
+2024,hard_coal,27.336,26.199,-4.159,UC
+2024,gas,56.982,51.828,-9.044,UC
+2025,lignite,67.166,72.993,8.674,UC
+2025,hard_coal,28.157,29.439,4.553,UC
+2025,gas,60.608,55.635,-8.205,UC
